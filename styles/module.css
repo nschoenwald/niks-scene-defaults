@@ -1,0 +1,42 @@
+/* Nik's Scene Defaults: settings window */
+
+.niks-scene-defaults {
+  --nsd-inactive-opacity: 0.55;
+}
+
+.niks-scene-defaults .window-content {
+  overflow: hidden;
+}
+
+.niks-scene-defaults .nsd-intro {
+  margin: 0;
+  flex: none;
+}
+
+.niks-scene-defaults nav.tabs {
+  flex: none;
+}
+
+.niks-scene-defaults .tab.scrollable {
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.niks-scene-defaults .tab.active {
+  flex: 1;
+}
+
+/* Override checkbox in front of each property */
+.niks-scene-defaults .form-group.nsd-row > .nsd-override {
+  flex: none;
+  margin: 0 0.5rem 0 0;
+}
+
+.niks-scene-defaults .form-group.nsd-row.nsd-inactive > label,
+.niks-scene-defaults .form-group.nsd-row.nsd-inactive > .form-fields {
+  opacity: var(--nsd-inactive-opacity);
+}
+
+.niks-scene-defaults .form-group.nsd-row > .hint {
+  padding-left: calc(var(--checkbox-size, 1rem) + 0.5rem);
+}

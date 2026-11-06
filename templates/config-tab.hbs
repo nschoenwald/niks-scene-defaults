@@ -1,0 +1,11 @@
+<div class="tab scrollable{{#if tab.active}} active{{/if}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
+    {{#each fieldsets as |fieldset|}}
+    <fieldset>
+        <legend>{{localize fieldset.legend}}</legend>
+        {{#if fieldset.hint}}<p class="hint">{{localize fieldset.hint}}</p>{{/if}}
+        {{#each fieldset.rows as |row|}}
+        {{{row.html}}}
+        {{/each}}
+    </fieldset>
+    {{/each}}
+</div>

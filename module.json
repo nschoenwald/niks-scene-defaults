@@ -1,0 +1,43 @@
+{
+  "id": "niks-scene-defaults",
+  "title": "Nik's Scene Defaults",
+  "description": "Choose the settings new scenes start with: grid, vision, fog, lighting, background colour, navigation and more. Duplicated scenes stay unchanged, imported scenes too unless you choose otherwise.",
+  "url": "https://github.com/nschoenwald/niks-scene-defaults",
+  "manifest": "https://github.com/nschoenwald/niks-scene-defaults/releases/latest/download/module.json",
+  "download": "https://github.com/nschoenwald/niks-scene-defaults/releases/latest/download/module.zip",
+  "bugs": "https://github.com/nschoenwald/niks-scene-defaults/issues",
+  "changelog": "https://github.com/nschoenwald/niks-scene-defaults/blob/main/CHANGELOG.md",
+  "version": "14.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "nikolai.sw"
+    }
+  ],
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    }
+  ],
+  "packs": [],
+  "socket": false,
+  "protected": false,
+  "library": false
+}

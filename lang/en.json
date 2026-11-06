@@ -1,0 +1,42 @@
+{
+  "NSD": {
+    "Settings": {
+      "Enabled": {
+        "Name": "Apply to new scenes",
+        "Hint": "Apply the scene defaults when a scene is created. Imported and duplicated scenes keep their own settings unless the next setting says otherwise."
+      },
+      "ApplyToImports": {
+        "Name": "Also apply to imported scenes",
+        "Hint": "Also apply the scene defaults to scenes imported from compendiums and adventures, replacing their own values. Scene size, padding, grid type and grid size are kept, so walls and tokens stay aligned with the map. Duplicated scenes are never changed."
+      },
+      "Menu": {
+        "Name": "Scene Defaults",
+        "Label": "Configure Scene Defaults",
+        "Hint": "Choose the settings new scenes start with."
+      }
+    },
+    "Config": {
+      "Title": "Scene Defaults",
+      "Intro": "Checked settings are used for every new scene. Unchecked settings keep Foundry's value, shown greyed out.",
+      "Override": "Use this value for new scenes",
+      "ClearAll": "Uncheck All"
+    },
+    "Preset": {
+      "DefaultName": "Default"
+    },
+    "Context": {
+      "SaveAsDefaults": "Save as Scene Defaults"
+    },
+    "Dialog": {
+      "SaveTitle": "Save as Scene Defaults",
+      "SaveContent": "Replace the current scene defaults with the settings of <strong>{name}</strong>? {count} settings of this scene differ from Foundry's defaults and will be used for new scenes. All other settings are unchecked.",
+      "SaveNone": "All settings of <strong>{name}</strong> match Foundry's defaults. Saving clears the scene defaults."
+    },
+    "Notifications": {
+      "Saved": "Scene defaults saved.",
+      "SavedFromScene": "Scene defaults taken from {name}.",
+      "InvalidValues": "Some values were invalid and not saved: {fields}",
+      "Skipped": "Scene defaults \"{name}\": some values were invalid and not applied: {fields}"
+    }
+  }
+}

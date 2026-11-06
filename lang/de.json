@@ -1,0 +1,42 @@
+{
+  "NSD": {
+    "Settings": {
+      "Enabled": {
+        "Name": "Auf neue Szenen anwenden",
+        "Hint": "Wendet die Szenen-Standards an, wenn eine Szene erstellt wird. Importierte und duplizierte Szenen behalten ihre eigenen Einstellungen, sofern die nächste Einstellung nichts anderes festlegt."
+      },
+      "ApplyToImports": {
+        "Name": "Auch auf importierte Szenen anwenden",
+        "Hint": "Wendet die Szenen-Standards auch auf Szenen an, die aus Kompendien und Abenteuern importiert werden, und ersetzt deren eigene Werte. Szenengröße, Rand, Rastertyp und Rastergröße bleiben erhalten, damit Wände und Token zur Karte passen. Duplizierte Szenen werden nie verändert."
+      },
+      "Menu": {
+        "Name": "Szenen-Standards",
+        "Label": "Szenen-Standards einrichten",
+        "Hint": "Lege fest, mit welchen Einstellungen neue Szenen beginnen."
+      }
+    },
+    "Config": {
+      "Title": "Szenen-Standards",
+      "Intro": "Angehakte Einstellungen werden für jede neue Szene verwendet. Nicht angehakte behalten den Foundry-Wert, der ausgegraut angezeigt wird.",
+      "Override": "Diesen Wert für neue Szenen verwenden",
+      "ClearAll": "Alle abwählen"
+    },
+    "Preset": {
+      "DefaultName": "Standard"
+    },
+    "Context": {
+      "SaveAsDefaults": "Als Szenen-Standard speichern"
+    },
+    "Dialog": {
+      "SaveTitle": "Als Szenen-Standard speichern",
+      "SaveContent": "Die aktuellen Szenen-Standards durch die Einstellungen von <strong>{name}</strong> ersetzen? {count} Einstellungen dieser Szene weichen von den Foundry-Standards ab und werden für neue Szenen verwendet. Alle anderen Einstellungen werden abgewählt.",
+      "SaveNone": "Alle Einstellungen von <strong>{name}</strong> entsprechen den Foundry-Standards. Speichern leert die Szenen-Standards."
+    },
+    "Notifications": {
+      "Saved": "Szenen-Standards gespeichert.",
+      "SavedFromScene": "Szenen-Standards von {name} übernommen.",
+      "InvalidValues": "Einige Werte waren ungültig und wurden nicht gespeichert: {fields}",
+      "Skipped": "Szenen-Standards „{name}“: Einige Werte waren ungültig und wurden nicht angewendet: {fields}"
+    }
+  }
+}
