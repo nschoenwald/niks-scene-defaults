@@ -2,6 +2,10 @@
 
 All notable changes to Nik's Scene Defaults are documented in this file.
 
+## [14.0.1] - 2026-11-07
+### Fixed
+- **Settings window**: The checkboxes of the settings you chose are checked again when you reopen the window. Before, they always showed unchecked, and saving again without re-checking them removed your defaults.
+
 ## [14.0.0] - 2026-11-06
 ### Added
 - **Scene defaults**: Choose the settings new scenes start with, in a window laid out like Scene Configuration: grid, vision and fog, global illumination, ambience, background colour, size, navigation, player access, playlist and transition. Only the settings you check are changed.

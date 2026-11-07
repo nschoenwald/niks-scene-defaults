@@ -133,7 +133,8 @@ export default class SceneDefaultsConfig extends HandlebarsApplicationMixin(Appl
     checkbox.type = "checkbox";
     checkbox.className = "nsd-override";
     checkbox.name = `override.${entry.key}`;
-    checkbox.checked = overridden;
+    // Set the attribute, not the property: the row is passed to the template as outerHTML
+    checkbox.toggleAttribute("checked", overridden);
     checkbox.dataset.tooltip = "NSD.Config.Override";
     checkbox.setAttribute("aria-label", game.i18n.localize("NSD.Config.Override"));
     group.prepend(checkbox);
