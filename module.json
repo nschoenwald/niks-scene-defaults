@@ -7,7 +7,7 @@
   "download": "https://github.com/nschoenwald/niks-scene-defaults/releases/latest/download/module.zip",
   "bugs": "https://github.com/nschoenwald/niks-scene-defaults/issues",
   "changelog": "https://github.com/nschoenwald/niks-scene-defaults/blob/main/CHANGELOG.md",
-  "version": "14.0.1",
+  "version": "14.1.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14",

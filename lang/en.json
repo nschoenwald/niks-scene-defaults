@@ -19,7 +19,11 @@
       "Title": "Scene Defaults",
       "Intro": "Checked settings are used for every new scene. Unchecked settings keep Foundry's value, shown greyed out.",
       "Override": "Use this value for new scenes",
-      "ClearAll": "Uncheck All"
+      "ClearAll": "Uncheck All",
+      "Export": "Export",
+      "ExportHint": "Save the scene defaults and the module settings to a JSON file. Unsaved changes in this window are not included.",
+      "Import": "Import",
+      "ImportHint": "Load scene defaults from a JSON file, replacing the current ones."
     },
     "Preset": {
       "DefaultName": "Default"
@@ -32,11 +36,22 @@
       "SaveContent": "Replace the current scene defaults with the settings of <strong>{name}</strong>? {count} settings of this scene differ from Foundry's defaults and will be used for new scenes. All other settings are unchecked.",
       "SaveNone": "All settings of <strong>{name}</strong> match Foundry's defaults. Saving clears the scene defaults."
     },
+    "Import": {
+      "Title": "Import Scene Defaults",
+      "Content": "Replace the current scene defaults and module settings with the ones in <em>{name}</em>? {count} settings will be used for new scenes. Unsaved changes in the settings window are lost.",
+      "ContentSettingsOnly": "Import the module settings from <em>{name}</em>? The file contains no scene defaults.",
+      "NotAnExport": "Not a Nik's Scene Defaults export.",
+      "NewerVersion": "The file was made with a newer version of Nik's Scene Defaults. Update the module first."
+    },
     "Notifications": {
       "Saved": "Scene defaults saved.",
       "SavedFromScene": "Scene defaults taken from {name}.",
       "InvalidValues": "Some values were invalid and not saved: {fields}",
-      "Skipped": "Scene defaults \"{name}\": some values were invalid and not applied: {fields}"
+      "Skipped": "Scene defaults \"{name}\": some values were invalid and not applied: {fields}",
+      "Exported": "Scene defaults exported to {filename}.",
+      "Imported": "Scene defaults imported from {name}.",
+      "ImportFailed": "Import failed: {error}",
+      "ImportSkipped": "Some values in the file are not supported or invalid and were not imported: {fields}"
     }
   }
 }

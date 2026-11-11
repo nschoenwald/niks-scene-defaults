@@ -1,5 +1,6 @@
 import { DEFAULT_PRESET_ID, MODULE_ID } from "../constants.js";
 import { getCoreValue, getFieldIndex, getFieldTabs } from "../fields.js";
+import { exportToFile, importFromFile } from "../backup.js";
 import { cleanValue, emptyPreset, getDefaultPreset, pruneUnknown, savePreset } from "../presets.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
@@ -26,7 +27,9 @@ export default class SceneDefaultsConfig extends HandlebarsApplicationMixin(Appl
       handler: SceneDefaultsConfig.#onSubmit
     },
     actions: {
-      clearAll: SceneDefaultsConfig.#onClearAll
+      clearAll: SceneDefaultsConfig.#onClearAll,
+      exportDefaults: () => exportToFile(),
+      importDefaults: () => importFromFile()
     }
   };
 
@@ -73,6 +76,10 @@ export default class SceneDefaultsConfig extends HandlebarsApplicationMixin(Appl
     if ( partId === "footer" ) {
       context.buttons = [
         { type: "button", action: "clearAll", icon: "fa-solid fa-eraser", label: "NSD.Config.ClearAll" },
+        { type: "button", action: "exportDefaults", icon: "fa-solid fa-file-export", label: "NSD.Config.Export",
+          tooltip: "NSD.Config.ExportHint" },
+        { type: "button", action: "importDefaults", icon: "fa-solid fa-file-import", label: "NSD.Config.Import",
+          tooltip: "NSD.Config.ImportHint" },
         { type: "submit", icon: "fa-solid fa-floppy-disk", label: "SETTINGS.Save" }
       ];
       return context;

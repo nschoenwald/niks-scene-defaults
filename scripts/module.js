@@ -2,6 +2,7 @@ import { DATA_VERSION, DEFAULT_PRESET_ID, MODULE_ID, SETTINGS } from "./constant
 import { getChanges, getCreationKind, onImportAdventure, onPreCreateScene, onPreImportAdventure, resolvePreset }
   from "./apply.js";
 import { countOverrides, getDefaultPreset, getPreset, getPresets, presetFromScene, savePreset } from "./presets.js";
+import { exportData, importData } from "./backup.js";
 import SceneDefaultsConfig from "./apps/scene-defaults-config.js";
 
 Hooks.once("init", () => {
@@ -29,6 +30,8 @@ Hooks.once("init", () => {
     },
     getCreationKind,
     savePresetFromScene: (scene, options) => savePreset(presetFromScene(scene, options)),
+    exportData,
+    importData,
     openConfig: () => new SceneDefaultsConfig().render({ force: true })
   };
   game.modules.get(MODULE_ID).api = api;

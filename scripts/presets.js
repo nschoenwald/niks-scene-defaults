@@ -159,6 +159,6 @@ export function pruneUnknown(preset) {
  */
 function isEqual(a, b) {
   if ( (a === undefined || a === null) && (b === undefined || b === null) ) return true;
-  if ( (typeof a === "object") || (typeof b === "object") ) return foundry.utils.objectsEqual(a ?? {}, b ?? {});
+  if ( (typeof a === "object") || (typeof b === "object") ) return foundry.utils.equals(a ?? {}, b ?? {});
   return String(a) === String(b);
 }

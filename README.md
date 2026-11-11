@@ -19,6 +19,7 @@ Choose the settings new scenes start with, once, instead of changing them on eve
   - **Environment**: base and darkness ambience, darkness level and lock, blend ambience.
   - **Misc**: scene playlist, transition animation, duration and "active only".
 - **Copy from a scene**: Right-click a scene in the Scenes sidebar and choose **Save as Scene Defaults**. Every setting of that scene that differs from Foundry's defaults becomes your new default.
+- **Export / Import**: The **Export** and **Import** buttons in the settings window save your scene defaults (and the two module settings) to a JSON file and load them into another world. Importing replaces the current defaults. The file has the same layout as the settings exports of Nik's Foundry Tweaks and Nik's DnD5e Tweaks.
 - **Imports stay untouched**: Only settings that a new scene doesn't bring along are filled in. Scenes created with **Create Scene** get all your defaults. Scenes from compendiums and adventures keep their own settings.
 - **Also apply to imported scenes** (world setting, off by default): Scenes imported from compendiums (sidebar import or drag and drop) and adventures get your defaults too, replacing their own values. Scene size, padding, grid type and grid size are never changed on imports, so walls, tokens and tiles stay aligned with the map. The background colour goes on the scene's starting level.
 - **Duplicates are never changed**: A duplicated scene always stays an exact copy, whatever the settings.
@@ -28,6 +29,7 @@ Choose the settings new scenes start with, once, instead of changing them on eve
 
 ## ⚙️ For GMs
 
+- A scene playlist in your defaults belongs to its world. After importing the defaults into another world, that playlist doesn't exist there, so new scenes get no playlist (with a warning) until you pick one again.
 - If the playlist in your defaults has been deleted, new scenes are created without a playlist and you get a warning.
 - Grid type, distance and units that aren't checked come from your game system (for example 5 ft squares in D&D 5e).
 - New scenes have no background image yet, so the scene size you set is used as is.
@@ -43,6 +45,8 @@ Choose the settings new scenes start with, once, instead of changing them on eve
   - `getChanges(data = {})`: the changes the defaults would make to a scene created with `data`, plus `kind`.
   - `getCreationKind(data)`: `"new"`, `"import"` or `"duplicate"`.
   - `savePresetFromScene(scene)`: replace the defaults with the settings of a scene.
+  - `exportData()`: the export payload (`{ format: 2, title, exportedAt, exportedBy, modules: { "niks-scene-defaults": { version, settings: { enabled, applyToImports, presets } } } }`), as written by **Export**.
+  - `importData(payload)`: store such a payload without asking, replacing the current defaults. Values are checked like in the settings window; unsupported or invalid ones are dropped. Returns `{ count, skipped }`; throws if the payload isn't an export.
   - `openConfig()`: open the settings window.
 - **Hook** `niks-scene-defaults.preApply(scene, changes, preset, data, options)`: runs before the defaults are applied. Edit `changes.scene` / `changes.level`, or return `false` to skip. `changes.kind` tells how the scene is being created. Not called for duplicates.
 
@@ -72,6 +76,7 @@ Requires **Foundry VTT v14**. Works with any game system.
 
 ### 🎲 D&D 5e Specific
 * **[Nik's DnD5e Tweaks](https://github.com/nschoenwald/niks-dnd5e-tweaks)** – Consolidated collection of quality-of-life enhancements and combat automation tweaks for DnD5e.
+* **[Nik's Give & Take](https://github.com/nschoenwald/niks-give-and-take)** – Players hand items and money to other characters and the party, and take them from the party's stash.
 
 ### ⚔️ Combat & Token Tools
 * **[Nik's Action HUD](https://github.com/nschoenwald/niks-action-hud)** – Sleek, modern canvas-docked Action HUD for quick access to attacks, spells, inventory, and utility rolls.

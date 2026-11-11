@@ -19,7 +19,11 @@
       "Title": "Szenen-Standards",
       "Intro": "Angehakte Einstellungen werden für jede neue Szene verwendet. Nicht angehakte behalten den Foundry-Wert, der ausgegraut angezeigt wird.",
       "Override": "Diesen Wert für neue Szenen verwenden",
-      "ClearAll": "Alle abwählen"
+      "ClearAll": "Alle abwählen",
+      "Export": "Exportieren",
+      "ExportHint": "Speichert die Szenen-Standards und die Moduleinstellungen in einer JSON-Datei. Nicht gespeicherte Änderungen in diesem Fenster sind nicht enthalten.",
+      "Import": "Importieren",
+      "ImportHint": "Lädt Szenen-Standards aus einer JSON-Datei und ersetzt die aktuellen."
     },
     "Preset": {
       "DefaultName": "Standard"
@@ -32,11 +36,22 @@
       "SaveContent": "Die aktuellen Szenen-Standards durch die Einstellungen von <strong>{name}</strong> ersetzen? {count} Einstellungen dieser Szene weichen von den Foundry-Standards ab und werden für neue Szenen verwendet. Alle anderen Einstellungen werden abgewählt.",
       "SaveNone": "Alle Einstellungen von <strong>{name}</strong> entsprechen den Foundry-Standards. Speichern leert die Szenen-Standards."
     },
+    "Import": {
+      "Title": "Szenen-Standards importieren",
+      "Content": "Die aktuellen Szenen-Standards und Moduleinstellungen durch die aus <em>{name}</em> ersetzen? {count} Einstellungen werden für neue Szenen verwendet. Nicht gespeicherte Änderungen im Einstellungsfenster gehen verloren.",
+      "ContentSettingsOnly": "Die Moduleinstellungen aus <em>{name}</em> importieren? Die Datei enthält keine Szenen-Standards.",
+      "NotAnExport": "Keine Exportdatei von Nik's Scene Defaults.",
+      "NewerVersion": "Die Datei wurde mit einer neueren Version von Nik's Scene Defaults erstellt. Aktualisiere zuerst das Modul."
+    },
     "Notifications": {
       "Saved": "Szenen-Standards gespeichert.",
       "SavedFromScene": "Szenen-Standards von {name} übernommen.",
       "InvalidValues": "Einige Werte waren ungültig und wurden nicht gespeichert: {fields}",
-      "Skipped": "Szenen-Standards „{name}“: Einige Werte waren ungültig und wurden nicht angewendet: {fields}"
+      "Skipped": "Szenen-Standards „{name}“: Einige Werte waren ungültig und wurden nicht angewendet: {fields}",
+      "Exported": "Szenen-Standards nach {filename} exportiert.",
+      "Imported": "Szenen-Standards aus {name} importiert.",
+      "ImportFailed": "Import fehlgeschlagen: {error}",
+      "ImportSkipped": "Einige Werte der Datei werden nicht unterstützt oder sind ungültig und wurden nicht importiert: {fields}"
     }
   }
 }

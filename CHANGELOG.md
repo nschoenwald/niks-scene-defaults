@@ -2,6 +2,10 @@
 
 All notable changes to Nik's Scene Defaults are documented in this file.
 
+## [14.1.0] - 2026-11-07
+### Added
+- **Export / Import**: Save your scene defaults to a JSON file and load them into another world, with the new **Export** and **Import** buttons in the settings window. The file works like the settings exports of Nik's Foundry Tweaks and Nik's DnD5e Tweaks.
+
 ## [14.0.1] - 2026-11-07
 ### Fixed
 - **Settings window**: The checkboxes of the settings you chose are checked again when you reopen the window. Before, they always showed unchecked, and saving again without re-checking them removed your defaults.
