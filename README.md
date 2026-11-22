@@ -54,7 +54,7 @@ Choose the settings new scenes start with, once, instead of changing them on eve
 
 ## 🌐 Languages
 
-🇬🇧 English · 🇩🇪 Deutsch
+🇬🇧 English · 🇩🇪 Deutsch · 🇫🇷 Français (thanks Kameleau)
 
 ---
 

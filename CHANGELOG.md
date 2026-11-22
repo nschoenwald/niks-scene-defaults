@@ -2,6 +2,10 @@
 
 All notable changes to Nik's Scene Defaults are documented in this file.
 
+## [14.2.0] - 2026-11-22
+### Added
+- **French translation**: The module is now available in French, reviewed by Kameleau. Thank you!
+
 ## [14.1.0] - 2026-11-07
 ### Added
 - **Export / Import**: Save your scene defaults to a JSON file and load them into another world, with the new **Export** and **Import** buttons in the settings window. The file works like the settings exports of Nik's Foundry Tweaks and Nik's DnD5e Tweaks.

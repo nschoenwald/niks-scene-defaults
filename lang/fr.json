@@ -1,0 +1,57 @@
+{
+  "NSD": {
+    "Settings": {
+      "Enabled": {
+        "Name": "Appliquer aux nouvelles scènes",
+        "Hint": "Applique les paramètres par défaut lorsqu'une scène est créée. Les scènes importées et dupliquées gardent leurs propres paramètres, sauf si le paramètre suivant en décide autrement."
+      },
+      "ApplyToImports": {
+        "Name": "Appliquer aussi aux scènes importées",
+        "Hint": "Applique aussi les paramètres par défaut aux scènes importées depuis des compendiums et des aventures, en remplaçant leurs propres valeurs. La taille de la scène, la marge, le type et la taille de la grille sont conservés, pour que les murs et les tokens restent alignés avec la carte. Les scènes dupliquées ne sont jamais modifiées."
+      },
+      "Menu": {
+        "Name": "Paramètres par défaut des scènes",
+        "Label": "Configurer les paramètres par défaut des scènes",
+        "Hint": "Choisissez les paramètres avec lesquels démarrent les nouvelles scènes."
+      }
+    },
+    "Config": {
+      "Title": "Paramètres par défaut des scènes",
+      "Intro": "Les paramètres cochés sont utilisés pour chaque nouvelle scène. Les paramètres non cochés gardent la valeur de Foundry, affichée en grisé.",
+      "Override": "Utiliser cette valeur pour les nouvelles scènes",
+      "ClearAll": "Tout décocher",
+      "Export": "Exporter",
+      "ExportHint": "Enregistre les paramètres par défaut des scènes et les paramètres du module dans un fichier JSON. Les modifications non enregistrées dans cette fenêtre ne sont pas incluses.",
+      "Import": "Importer",
+      "ImportHint": "Charge les paramètres par défaut des scènes depuis un fichier JSON, en remplaçant les paramètres actuels."
+    },
+    "Preset": {
+      "DefaultName": "Par défaut"
+    },
+    "Context": {
+      "SaveAsDefaults": "Enregistrer comme paramètres par défaut des scènes"
+    },
+    "Dialog": {
+      "SaveTitle": "Enregistrer comme paramètres par défaut des scènes",
+      "SaveContent": "Remplacer les paramètres par défaut actuels des scènes par ceux de <strong>{name}</strong> ? {count} paramètres de cette scène diffèrent des valeurs par défaut de Foundry et seront utilisés pour les nouvelles scènes. Tous les autres paramètres sont décochés.",
+      "SaveNone": "Tous les paramètres de <strong>{name}</strong> correspondent aux valeurs par défaut de Foundry. L'enregistrement efface les paramètres par défaut des scènes."
+    },
+    "Import": {
+      "Title": "Importer les paramètres par défaut des scènes",
+      "Content": "Remplacer les paramètres par défaut actuels des scènes et les paramètres du module par ceux de <em>{name}</em> ? {count} paramètres seront utilisés pour les nouvelles scènes. Les modifications non enregistrées dans la fenêtre des paramètres seront perdues.",
+      "ContentSettingsOnly": "Importer les paramètres du module depuis <em>{name}</em> ? Le fichier ne contient aucun paramètre par défaut de scène.",
+      "NotAnExport": "Ce fichier n'est pas un export de Nik's Scene Defaults.",
+      "NewerVersion": "Le fichier a été créé avec une version plus récente de Nik's Scene Defaults. Mettez d'abord le module à jour."
+    },
+    "Notifications": {
+      "Saved": "Paramètres par défaut des scènes enregistrés.",
+      "SavedFromScene": "Paramètres par défaut des scènes repris de {name}.",
+      "InvalidValues": "Certaines valeurs n'étaient pas valides et n'ont pas été enregistrées : {fields}",
+      "Skipped": "Paramètres par défaut des scènes « {name} » : certaines valeurs n'étaient pas valides et n'ont pas été appliquées : {fields}",
+      "Exported": "Paramètres par défaut des scènes exportés vers {filename}.",
+      "Imported": "Paramètres par défaut des scènes importés depuis {name}.",
+      "ImportFailed": "Échec de l'importation : {error}",
+      "ImportSkipped": "Certaines valeurs du fichier ne sont pas prises en charge ou ne sont pas valides et n'ont pas été importées : {fields}"
+    }
+  }
+}
